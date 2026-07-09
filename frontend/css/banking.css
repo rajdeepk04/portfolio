@@ -320,6 +320,14 @@ header{
     box-shadow:0 15px 35px rgba(29,78,216,.08);
 
     transition:.35s;
+    
+
+}
+.persona-card img{
+
+    width:220px;
+
+    border-radius:20px;
 
 }
 
@@ -332,16 +340,46 @@ header{
     box-shadow:0 25px 45px rgba(16,185,129,.18);
 
 }
+.overview,
+.problem,
+.role,
+.flow,
+.wireframes,
+.design,
+.challenges,
+.learnings,
+.outcome{
 
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.overview h2,
+.problem h2,
+.role h2,
+.flow h2,
+.wireframes h2,
+.design h2,
+.challenges h2,
+.learnings h2,
+.outcome h2{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
 .flow img,
 .wireframes img,
 .design img{
 
     border-radius:25px;
 
-    border:6px solid white;
+    margin-top:30px;
 
-    box-shadow:0 20px 45px rgba(29,78,216,.12);
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 h2{
