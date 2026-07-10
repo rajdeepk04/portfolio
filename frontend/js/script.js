@@ -6,6 +6,12 @@ const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const menuIcon = document.querySelector(".menu-btn i");
 
+if (window.emailjs) {
+    window.emailjs.init({
+        publicKey: "FhiPFP1HXGO_oicmc"
+    });
+}
+
 menuBtn.addEventListener("click", () => {
 
     navLinks.classList.toggle("active");
@@ -177,5 +183,65 @@ if (window.AOS) {
         duration: 1000,
         once: true,
         offset: 100
+    });
+}
+const contactForm = document.getElementById("contact-form") || document.getElementById("contactForm");
+const formStatus = document.getElementById("form-status");
+const submitButton = contactForm?.querySelector("button[type='submit']");
+
+function showFormStatus(message, type) {
+    if (!formStatus) return;
+
+    formStatus.textContent = message;
+    formStatus.className = `form-status show ${type}`;
+
+    clearTimeout(showFormStatus.timeout);
+    showFormStatus.timeout = setTimeout(() => {
+        formStatus.classList.remove("show");
+    }, 4000);
+}
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        if (!window.emailjs) {
+            showFormStatus("⚠️ Email service is unavailable. Please try again later.", "error");
+            return;
+        }
+
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending...";
+        }
+
+        const templateParams = {
+            from_name: this.elements.from_name?.value || "",
+            from_email: this.elements.from_email?.value || "",
+            subject: this.elements.subject?.value || "",
+            message: this.elements.message?.value || "",
+            user_name: this.elements.from_name?.value || "",
+            user_email: this.elements.from_email?.value || "",
+            user_subject: this.elements.subject?.value || "",
+            user_message: this.elements.message?.value || "",
+            reply_to: this.elements.from_email?.value || ""
+        };
+
+        emailjs.send(
+            "service_3sb7gon",
+            "template_0bud2wj",
+            templateParams
+        ).then(() => {
+            showFormStatus("✅ Message sent successfully!", "success");
+            this.reset();
+        }).catch((error) => {
+            console.error(error);
+            showFormStatus("❌ Failed to send message. Please try again.", "error");
+        }).finally(() => {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = "Send Message";
+            }
+        });
     });
 }

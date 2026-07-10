@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://unpkg.com https://cdnjs.cloudflare.com http://127.0.0.1:5500;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self' https://unpkg.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://api.emailjs.com http://127.0.0.1:5500;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preet | UI/UX Designer</title>
 
@@ -501,7 +501,7 @@
 
                         <h4>Phone</h4>
 
-                        <span>+91 XXXXX XXXXX</span>
+                        <span>+91 9877230874</span>
 
                     </div>
 
@@ -525,35 +525,21 @@
 
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-            >
+            <input type="text" name="from_name" placeholder="Your Name" required>
 
-            <input
-                type="email"
-                placeholder="Your Email"
-            >
+            <input type="email"  name="from_email" placeholder="Your Email" required>
 
-            <input
-                type="text"
-                placeholder="Subject"
-            >
+            <input type="text"  name="subject" placeholder="Subject" required>
 
-            <textarea
-                rows="6"
-                placeholder="Write your message..."
-            ></textarea>
+            <textarea rows="6" name="message" placeholder="Write your message..." ></textarea>
 
-            <button type="submit">
-
-                Send Message
-
-            </button>
+            <button id="submit" type="submit"> Send Message </button>
 
         </form>
+
+        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
 
     </div>
 
@@ -607,8 +593,9 @@
 
     </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="js/script.js"></script>
+   
 </body>
 </html>
