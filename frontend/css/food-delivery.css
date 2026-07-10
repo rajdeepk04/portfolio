@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background:#FFF8F5;
+    background:linear-gradient(135deg, #fff7f2 0%, #ffe8e1 100%);
     color:#1F2937;
     line-height:1.8;
 }
@@ -40,9 +40,14 @@ h1,h2,h3,h4{
 
     --primary:#EF4444;
     --secondary:#F59E0B;
+    --accent:#FECACA;
+    --accent-strong:#F97316;
     --light:#FFF1F2;
     --dark:#1F2937;
     --white:#FFFFFF;
+    --surface:#FFFDFB;
+    --bg:#FFF7F2;
+    --muted:#4B5563;
 
 }
 
@@ -215,7 +220,7 @@ header{
 
     gap:70px;
 
-    background:linear-gradient(135deg,#FFF7ED,#FEE2E2);
+    background:linear-gradient(135deg,#fff7ed 0%, #fee2e2 45%, #fffaf5 100%);
 
     padding-top:140px;
 
@@ -225,11 +230,13 @@ header{
 
     display:inline-block;
 
-    background:#FECACA;
+    background:var(--accent);
 
     color:var(--primary);
 
     padding:10px 22px;
+
+    border:1px solid var(--accent-strong);
 
     border-radius:50px;
 
@@ -263,7 +270,7 @@ header{
 
     border-radius:25px;
 
-    box-shadow:0 25px 50px rgba(239,68,68,.18);
+    box-shadow:0 24px 55px rgba(239,68,68,.22);
 
 }
 .project-info{
@@ -288,7 +295,7 @@ header{
 
     padding:16px 40px;
 
-    background:linear-gradient(135deg,#EF4444,#F59E0B);
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
     color:white;
 
@@ -304,7 +311,7 @@ header{
 
     transform:translateY(-6px);
 
-    box-shadow:0 18px 35px rgba(239,68,68,.30);
+    box-shadow:0 18px 35px rgba(245,158,11,.25);
 
 }
 
@@ -312,13 +319,13 @@ header{
 .persona-card,
 .system-grid div{
 
-    background:white;
+    background:var(--surface);
 
     border-radius:22px;
-
+    border:1px solid rgba(239,68,68,.10);
     padding:30px;
 
-    box-shadow:0 15px 35px rgba(239,68,68,.10);
+    box-shadow:0 18px 38px rgba(239,68,68,.10);
 
     transition:.35s;
 
@@ -409,7 +416,7 @@ footer{
 
     text-align:center;
 
-    background:#EF4444;
+    background:linear-gradient(135deg, #dc2626 0%, #d97706 100%);
 
     border-top:1px solid rgba(239,68,68,.14);
 

@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background:#F4F8FC;
+    background:linear-gradient(135deg, #f4f8ff 0%, #eef7ff 100%);
     color:#1E293B;
     line-height:1.8;
 }
@@ -41,9 +41,13 @@ h1,h2,h3,h4{
     --primary:#1D4ED8;
     --secondary:#10B981;
     --accent:#DBEAFE;
+    --accent-strong:#BFDBFE;
     --light:#F8FAFC;
     --dark:#1E293B;
     --white:#FFFFFF;
+    --surface:#FFFFFF;
+    --bg:#F4F8FF;
+    --muted:#475569;
 
 }
 /* ==========================
@@ -156,9 +160,9 @@ header{
     top:0;
     left:0;
     width:100%;
-    background:rgba(255,255,255,.95);
+    background:rgba(255,255,255,.94);
     backdrop-filter:blur(18px);
-    box-shadow:0 8px 30px rgba(29,78,216,.08);
+    box-shadow:0 10px 32px rgba(29,78,216,.10);
     z-index:1000;
 
 }
@@ -217,7 +221,7 @@ header{
 
     gap:70px;
 
-    background:linear-gradient(135deg,#EFF6FF,#ECFDF5);
+    background:linear-gradient(135deg,#eff6ff 0%, #ecfdf5 45%, #f8fbff 100%);
 
     padding-top:140px;
 
@@ -227,11 +231,13 @@ header{
 
     display:inline-block;
 
-    background:#DBEAFE;
+    background:var(--accent);
 
     color:var(--primary);
 
     padding:10px 22px;
+
+    border:1px solid var(--accent-strong);
 
     border-radius:50px;
 
@@ -265,7 +271,7 @@ header{
 
     border-radius:25px;
 
-    box-shadow:0 25px 50px rgba(29,78,216,.15);
+    box-shadow:0 24px 55px rgba(29,78,216,.20);
 
 }
 .project-info{
@@ -289,7 +295,7 @@ header{
 
     padding:16px 42px;
 
-    background:linear-gradient(135deg,#1D4ED8,#10B981);
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
     color:white;
 
@@ -304,20 +310,20 @@ header{
 
     transform:translateY(-6px);
 
-    box-shadow:0 18px 35px rgba(29,78,216,.30);
+    box-shadow:0 18px 35px rgba(16,185,129,.24);
 
 }
 .goal-card,
 .persona-card,
 .system-grid div{
 
-    background:white;
+    background:var(--surface);
 
     padding:30px;
 
     border-radius:22px;
-
-    box-shadow:0 15px 35px rgba(29,78,216,.08);
+    border:1px solid rgba(29,78,216,.08);
+    box-shadow:0 18px 38px rgba(29,78,216,.09);
 
     transition:.35s;
     
@@ -405,7 +411,7 @@ h2{
 
 footer{
 
-    background:#1D4ED8;
+    background:linear-gradient(135deg, #1e40af 0%, #0f766e 100%);
 
     color:white;
 

@@ -2,6 +2,20 @@
         GOOGLE FONT & RESET
 ===================================*/
 
+:root{
+    --bg:#f7efe8;
+    --bg-alt:#efe2d2;
+    --surface:#fffaf5;
+    --surface-strong:#f3e0cf;
+    --primary:#7a5131;
+    --primary-dark:#4d2f1f;
+    --accent:#c97b4d;
+    --accent-soft:#f2ddc8;
+    --text:#2f241d;
+    --muted:#6e5847;
+    --border:#dcc3ab;
+}
+
 *{
     margin:0;
     padding:0;
@@ -14,8 +28,8 @@ html{
 }
 
 body{
-    background:#F8FAFC;
-    color:#111827;
+    background:linear-gradient(135deg, var(--bg) 0%, #fcf7f2 100%);
+    color:var(--text);
     line-height:1.7;
 }
 
@@ -153,9 +167,11 @@ header{
 
     left:0;
 
-    background:white;
+    background:rgba(255,250,245,.95);
 
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 10px 30px rgba(77,47,31,.08);
 
     z-index:1000;
 
@@ -185,7 +201,7 @@ header{
 
     font-weight:700;
 
-    color:#2563EB;
+    color:var(--primary);
 
 }
 
@@ -215,7 +231,7 @@ header{
 
 .navbar ul li a:hover{
 
-    color:#2563EB;
+    color:var(--accent);
 
 }
 /*==================================
@@ -242,9 +258,9 @@ header{
 
     display:inline-block;
 
-    background:#DBEAFE;
+    background:var(--accent-soft);
 
-    color:#2563EB;
+    color:var(--primary-dark);
 
     padding:10px 20px;
 
@@ -262,11 +278,13 @@ header{
 
     margin-bottom:20px;
 
+    color:var(--primary-dark);
+
 }
 
 .case-hero p{
 
-    color:#6B7280;
+    color:var(--muted);
 
     font-size:18px;
 
@@ -278,7 +296,7 @@ header{
 
     border-radius:30px;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.12);
+    box-shadow:0 20px 50px rgba(77,47,31,.16);
 
 }
 .project-info{
@@ -293,7 +311,7 @@ header{
 
 .project-info div h4{
 
-    color:#2563EB;
+    color:var(--accent);
 
     margin-bottom:8px;
 
@@ -308,7 +326,7 @@ header{
 
     display:inline-block;
 
-    background:#2563EB;
+    background:linear-gradient(135deg, var(--accent), var(--primary));
 
     color:white;
 
@@ -324,7 +342,7 @@ header{
 
     transform:translateY(-4px);
 
-    box-shadow:0 15px 35px rgba(37,99,235,.3);
+    box-shadow:0 15px 35px rgba(124,81,49,.25);
 
 }
 .overview,
@@ -365,7 +383,7 @@ header{
 
     font-size:18px;
 
-    color:#4B5563;
+    color:var(--muted);
 
 }
 .goal-grid{
@@ -380,7 +398,7 @@ header{
 
 .goal-card{
 
-    background:white;
+    background:var(--surface);
 
     padding:35px;
 
@@ -388,7 +406,9 @@ header{
 
     text-align:center;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    border:1px solid var(--border);
+
+    box-shadow:0 15px 35px rgba(77,47,31,.08);
 
     transition:.3s;
 
@@ -404,7 +424,7 @@ header{
 
     font-size:40px;
 
-    color:#2563EB;
+    color:var(--accent);
 
     margin-bottom:20px;
 
@@ -421,7 +441,7 @@ header{
 
 .role-grid div{
 
-    background:#2563EB;
+    background:linear-gradient(135deg, var(--primary), var(--accent));
 
     color:white;
 
@@ -440,13 +460,15 @@ header{
 
     align-items:center;
 
-    background:white;
+    background:var(--surface);
 
     padding:40px;
 
     border-radius:25px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    border:1px solid var(--border);
+
+    box-shadow:0 15px 35px rgba(77,47,31,.08);
 
 }
 
@@ -465,7 +487,7 @@ header{
 
     margin-top:30px;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(77,47,31,.12);
 
 }
 .system-grid{
@@ -508,7 +530,7 @@ header{
 }
 footer{
 
-    background:#2563EB;
+    background:linear-gradient(135deg, var(--primary-dark), var(--primary));
 
     color:white;
 

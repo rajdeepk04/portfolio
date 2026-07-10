@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    background:#F4F9FF;
+    background:linear-gradient(135deg, #f4faff 0%, #ecfdf5 100%);
     color:#1F2937;
     line-height:1.8;
 }
@@ -40,9 +40,14 @@ h1,h2,h3,h4{
 
     --primary:#2563EB;
     --secondary:#22C55E;
+    --accent:#DBEAFE;
+    --accent-strong:#3B82F6;
     --light:#EFF6FF;
     --dark:#1F2937;
     --white:#FFFFFF;
+    --surface:#FAFDFF;
+    --bg:#F3F9FF;
+    --muted:#4B5563;
 
 }
 
@@ -230,7 +235,7 @@ header{
 
     gap:70px;
 
-    background:linear-gradient(135deg,#EFF6FF,#DCFCE7);
+    background:linear-gradient(135deg,#eff6ff 0%, #dcfce7 45%, #f8fcff 100%);
 
     padding-top:140px;
 
@@ -244,9 +249,10 @@ header{
 
     border-radius:50px;
 
-    background:#DBEAFE;
+    background:var(--accent);
 
     color:var(--primary);
+    border:1px solid var(--accent-strong);
 
     font-weight:600;
 
@@ -278,7 +284,7 @@ header{
 
     border-radius:25px;
 
-    box-shadow:0 25px 45px rgba(37,99,235,.15);
+    box-shadow:0 24px 50px rgba(37,99,235,.18);
 
 }
 .project-info{
@@ -302,7 +308,7 @@ header{
 
     display:inline-block;
 
-    background:linear-gradient(135deg,#2563EB,#22C55E);
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
     color:#fff;
 
@@ -320,20 +326,20 @@ header{
 
     transform:translateY(-5px);
 
-    box-shadow:0 15px 35px rgba(37,99,235,.25);
+    box-shadow:0 15px 35px rgba(34,197,94,.22);
 
 }
 .goal-card,
 .persona-card,
 .system-grid div{
 
-    background:#fff;
+    background:var(--surface);
 
     border-radius:20px;
-
+    border:1px solid rgba(37,99,235,.08);
     padding:30px;
 
-    box-shadow:0 15px 30px rgba(37,99,235,.08);
+    box-shadow:0 16px 34px rgba(37,99,235,.09);
 
     transition:.3s;
 
@@ -416,7 +422,7 @@ h2{
 }
 footer{
 
-    background:#2563EB;
+    background:linear-gradient(135deg, #1d4ed8 0%, #15803d 100%);
 
     color:white;
 
