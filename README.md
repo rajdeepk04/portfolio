@@ -4,8 +4,9 @@ Welcome to my personal portfolio website! This portfolio showcases my UI/UX desi
 
 ## 🚀 Live Demo
 
-🔗 Portfolio Website:(https://github.com/rajdeepk04/portfolio)
+🔗 Portfolio Website: https://rajdeepk04.github.io/portfolio/
 
+🔗 Interior Design Website: https://rajdeepk04.github.io/interior-design-website/
 
 
 ---
@@ -89,9 +90,9 @@ The portfolio includes a downloadable resume for recruiters and employers.
 
 **Name:** Rajdeep
 
-**Email:** your-email@example.com
+**Email:** deepkr0416@gmail.com
 
-**LinkedIn:** Add your LinkedIn profile link
+**LinkedIn:** www.linkedin.com/in/rajdeep-uiux
 
 **GitHub:** https://github.com/rajdeepk04
 
