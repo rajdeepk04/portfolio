@@ -90,9 +90,9 @@ The portfolio includes a downloadable resume for recruiters and employers.
 
 **Name:** Rajdeep
 
-**Email:** your-email@example.com
+**Email:** deepkr0416@gmail.com
 
-**LinkedIn:** Add your LinkedIn profile link
+**LinkedIn:** www.linkedin.com/in/rajdeep-uiux
 
 **GitHub:** https://github.com/rajdeepk04
 
