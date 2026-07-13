@@ -76,7 +76,8 @@ Mobile banking application for secure digital transactions.
 
 ## 📸 Screenshots
 
-_Add screenshots of your portfolio homepage and project pages here._
+   <img src="images/Index.png" alt="home">
+      <img src="images/project.png" alt="project">
 
 ---
 
