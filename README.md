@@ -85,7 +85,7 @@ Mobile banking application for secure digital transactions.
 
 The portfolio includes a downloadable resume for recruiters and employers.
 
----
+  <a href="./resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary" download> Download Resume </a>
 
 ## 📫 Contact
 
