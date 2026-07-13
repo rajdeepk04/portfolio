@@ -4,10 +4,9 @@ Welcome to my personal portfolio website! This portfolio showcases my UI/UX desi
 
 ## 🚀 Live Demo
 
-🔗 Portfolio Website: (Add your GitHub Pages link here after publishing)
+🔗 Portfolio Website:(https://github.com/rajdeepk04/portfolio)
 
-Example:
-https://rajdeepk04.github.io/portfolio/
+
 
 ---
 
