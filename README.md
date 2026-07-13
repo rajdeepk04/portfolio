@@ -4,8 +4,9 @@ Welcome to my personal portfolio website! This portfolio showcases my UI/UX desi
 
 ## 🚀 Live Demo
 
-🔗 Portfolio Website:(https://github.com/rajdeepk04/portfolio)
+🔗 Portfolio Website: https://rajdeepk04.github.io/portfolio/
 
+🔗 Interior Design Website: https://rajdeepk04.github.io/interior-design-website/
 
 
 ---
